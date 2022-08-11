@@ -1,0 +1,601 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero__section{
+    background: url(images/heroSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+} 
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 16px 48px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap:20px;
+}
+
+.navbar__menu_container .user__icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: solid 1px white;
+    display: none;
+}
+
+
+.hero__section_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:32px;
+    height: calc(60vh - 60px);
+}
+
+.hero__section_logo{
+    width: 250px;
+    height: auto;
+}
+
+.hero__section_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero__section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap:10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.input__container_location,
+.input__container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.input__container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.input__container_search{
+    width: 65%;
+}
+
+
+@media only screen and (max-width:600px){
+    .navbar__menu_container .user__icon{
+        display:flex
+    }
+
+    .link{
+        display: none;
+    }
+
+    .navbar{
+        padding: 16px;
+    }
+
+    .hero__section{
+        min-height: 80vh;
+    }
+
+    .hero__section_input_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .input__container_location,
+    .input__container_search{
+        padding: 15px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .hero__section_container{
+        height: calc(80vh - 60px);
+    }
+
+    .hero__section_title{
+        font-size: 20px;
+        width: 90%;
+    }
+}
+
+.we__offer_container{
+    margin: 3rem auto;
+    width: 90%;
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.we__offer_container_item{
+    border-radius: 10px;
+    overflow: hidden;
+    border:1px solid #e0e0e0 ;
+    transition: all 0.3s ease;  
+}
+
+.we__offer_container_item:hover{
+    transform: scale(1.05);
+}
+
+.we__offer_container_item img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we__offer_item_title{
+    padding: 15px;
+}
+
+.we__offer_item_title h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.we__offer_item_title p{
+    font-size: 12px;
+}
+
+.collections h1{
+    font-size: 30px;
+    font-weight: 400;
+    width: 90%;
+    padding-left: 100px;
+}
+
+.collections_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 100px;
+    font-weight: 300;
+}
+
+.collections_content a{
+    text-decoration: none;
+    color: rgb(197, 34, 34);
+    cursor: pointer;
+}
+
+.collections_list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    padding: 20px;
+    margin-top: 15px;
+  
+}
+
+.collections_list .card{
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.collections_list_1{
+    background: url(images/collec1.png);
+    }
+
+.collections_list_2{
+    background: url(images/collec2.jpg);
+    }
+
+.collections_list_3{
+    background: url(images/collec3.avif);}
+
+.collections_list_4{
+    background: url(images/collec4.jfif);
+   }
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.9) 0%,
+    rgba(0,0,0, 0.05) 50%,
+    rgba(0,0,0,0.05) 85%,
+    );
+}
+
+
+.content{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding: 15px 18px;
+}
+
+.content h2{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.content span{
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+}
+
+.get_the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 251, 247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get_app_container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.get_app_container .left{
+    flex: 2;
+}
+
+.get_app_container .right{
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.get_app_container .left img{
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.get_app_container .right h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.get_app_container .right p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.get_app_container .right .input_button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.get_app_container .right .input_button div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.get_app_container .right .input_button div input{
+    height: 20px;
+    width: 20px;
+    accent-color: rgb(239, 79, 95);
+}
+
+.get_app_container .right .input_text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.get_app_container .right .input_text input{
+    flex: auto;
+    height: 40px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 12px;
+    }
+
+.get_app_container .right .input_text button{
+    flex: auto;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(239, 79, 95);
+    color: #e0e0e0;
+    cursor: pointer;
+    }
+
+.get_app_container .right h5{
+    font-weight: 300;
+}
+
+.get_app_container .right .download_opt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.get_app_container .right .download_opt div{
+    display: flex;
+    gap: 1rem;
+}
+
+.get_app_container .right img{
+    width: 30%;
+    height: 35px;
+}
+
+@media only screen and(max-width: 1300px){
+  .get_the_app .get_app_container .left, 
+  .get_app_container .get_app_container .right{
+    flex: 1;
+  }
+ 
+  .get_the_app .get_app_container{
+    width: 90%;
+  }
+
+}
+
+@media only screen and(max-width: 900px){
+    .get_the_app 
+    {
+      padding: 3rem 0;
+    }
+   
+    .get_the_app .get_app_container{
+      width: 80%;
+      flex-direction: column;
+    }
+  
+  }
+
+  .footer_container{
+    width: 100%;
+    background: #f7f7f7;
+    padding: 3rem 3rem;
+  }
+
+  .footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer_section1 img{
+    width: 150px;
+  }
+
+  .footer_section1_button{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer_section1_button button{
+    padding: 5px 5px;
+    height: 35px;
+    width: 100px;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .link_container{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   width: 80%;
+   margin: auto;
+   gap: 1rem;
+   padding: 3rem 0;
+  }
+
+  .footer_section2{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer_link{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+  }
+   
+  .footer_link:hover{
+    color: black;
+  }
+
+  .footer_section2 h4{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .footer_section2 .footer_section2_button{
+    display: flex;
+    gap: 8px;
+  }
+
+  .footer_section2 .footer_section2_button button{
+    background-color: black;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer_section2 .footer_section2_button button i{
+    color: white;
+    font-size: 13px;
+  }
+  
+  .footer_section2 img{
+    width: 70%;
+    height: 40px;
+  }
+
+  @media only screen and (max-width: 900px){
+    .link_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .link_container{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .places_container{
+     width: 80%;
+     padding: 3rem 0;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     gap: 2 rem;
+  }
+
+  .places_container h2{
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  .places_container b{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  .places{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .places button{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px #e0e0e0;
+    height: 80px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .places button h3{
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .places button span{
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .places button:hover{
+    box-shadow: 1px 1px 5px 1.2px rgb(221, 221, 221);
+  }
+
+  .explore_options{
+    width: 100%;
+    padding: 4.5rem 7.5rem;
+    margin: auto;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+
+  }
+
+  .explore_options h2{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  .explore_options button{
+    width: 100%;
+    background: white;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    height: 70px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .explore_options button h3{
+    font-size: 20px;
+    font-weight: 300;
+  }
