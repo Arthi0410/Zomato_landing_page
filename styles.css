@@ -497,6 +497,18 @@
     height: 40px;
   }
 
+  @media only screen and (max-width: 900px){
+    .link_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .link_container{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
   .places_container{
      width: 80%;
      padding: 3rem 0;
